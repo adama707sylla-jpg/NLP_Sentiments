@@ -1,0 +1,30 @@
+name: CI/CD — NLP Sentiments
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Recuperer le code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Installer Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      # 3. Installer les dependances
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Lancer les tests uniquement
+      - name: Run tests
+        run: pytest test_api.py -v

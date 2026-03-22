@@ -1,0 +1,9 @@
+# les fichier ignores
+mlflow.db
+mlruns/
+__pycache__/
+*.pyc
+.env
+train.csv
+pytest_cache/
+
