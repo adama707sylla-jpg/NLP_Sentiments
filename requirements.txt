@@ -5,4 +5,10 @@ pandas
 scikit-learn
 pydantic
 nltk
+pytest
+httpx
+sqlalchemy
+mlflow
+psycopg2-binary
+
 
