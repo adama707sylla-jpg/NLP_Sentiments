@@ -18,4 +18,4 @@ CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
 # app:app  | fichier app.py, object app
 # 0.0.0.0: ecoute toutes les connexions 
 # --port 10000: port impose par render
-# 
+#rsquisitoryUri:718100329950.dkr.ecr.eu-west-3.amazonaws.com/nlp-sentiments
